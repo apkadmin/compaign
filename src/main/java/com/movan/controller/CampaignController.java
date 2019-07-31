@@ -30,4 +30,9 @@ public class CampaignController {
     public Campaign getCampaignId(@PathVariable("id") String id){
         return campaign.getById(id);
     }
+
+    @PostMapping(value = "/campaign/add")
+    public String newCampaign(@RequestBody Campaign newcampaign){
+        return campaign.newCampaign(newcampaign);
+    }
 }

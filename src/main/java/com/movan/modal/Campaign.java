@@ -1,16 +1,17 @@
 package com.movan.modal;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class Campaign {
-    private String id 				= null;
+    private String id 				= UUID.randomUUID().toString();
     private String name 			= null;
     private String app_id  			= null;
     private String segment_id  		= null;
     private String state_of_funel   = null;
-    private Date date_added   	= null;
+    private Date date_added         = new Date();
     private int status 				= 0;
-    private Date expired_time 	= null;
+    private Date expired_time   	= new Date();
     private Channel channel         = null;
 
     public Campaign() {
@@ -98,5 +99,20 @@ public class Campaign {
 
     public void setChannel(Channel channel) {
         this.channel = channel;
+    }
+
+    @Override
+    public String toString() {
+        return "Campaign{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", app_id='" + app_id + '\'' +
+                ", segment_id='" + segment_id + '\'' +
+                ", state_of_funel='" + state_of_funel + '\'' +
+                ", date_added=" + date_added +
+                ", status=" + status +
+                ", expired_time=" + expired_time +
+                ", channel=" + channel.toString() +
+                '}';
     }
 }

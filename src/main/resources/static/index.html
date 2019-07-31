@@ -4,6 +4,33 @@
 	<title>Trang chu</title>
 </head>
 <body>
+<style>
+    table{
+        border-width: 1px;
+        border-color: white;
+        border-style: groove;
+    }
+    tr{
+        border-width: 1px;
+        border-color: white;
+        border-style: groove;
+    }
+    td{
+        border-width: 1px;
+        border-color: white;
+        border-style: groove;
+    }
+    th{
+        border-width: 1px;
+        border-color: white;
+        border-style: groove;
+    }
+pre{
+    color: #8fdc33;
+    background-color: #1c1e21; 
+       border: 1px solid #8d949e;
+    }
+</style>
 <table>
 	<thead>
         <tr>
@@ -20,7 +47,7 @@
             <td>GET</td>
             <td></td>
             <td></td>
-            <td>'[
+            <td><pre>[
     {
         "id": "sdaf1",
         "name": "sdaf2",
@@ -50,7 +77,7 @@
             "googleAds": "[NULL]"
         }
     }
-]'</td>
+]</pre></td>
 
         </tr>
     <tr>
@@ -58,7 +85,8 @@
         <td>GET</td>
         <td></td>
         <td></td>
-        <td>'{
+        <td><pre>
+            {
             "id": "sdaf1",
             "name": "sdaf2",
             "app_id": "sdaf3",
@@ -86,9 +114,55 @@
             "facebookAds": "['sdaf7']",
             "googleAds": "[NULL]"
             }
-            }'</td>
+            }
+        </pre>
+        </td>
     </tr>
 
+        <tr>
+            <td>/api/v1/campaign/add</td>
+            <td>POST</td>
+            <td>application/json</td>
+            <td>
+                <pre>
+                {
+                    "name": "name",
+                    "app_id": "app_id",
+                    "segment_id": "segment_id",
+                    "state_of_funel": "state_of_funel",
+                    "date_added": "2019-07-31",
+                    "status": 12,
+                    "expired_time": "2019-07-31",
+                    "channel": {
+                        "pushNotification": ["pushNotification","googleAds"],
+                        "email": ["email","googleAds"],
+                        "sms": ["sms","googleAds"],
+                        "facebookMessenger": ["facebookMessenger","googleAds"],
+                        "zalo": ["zalo","googleAds"],
+                        "twitterMessenger": ["twitterMessenger","googleAds"],
+                        "slackMessenger": ["slackMessenger","googleAds"],
+                        "viberMessenger": ["viberMessenger","googleAds"],
+                        "skypeMessenger": ["skypeMessenger","googleAds"],
+                        "line": ["line","googleAds"],
+                        "discord": ["discord","googleAds"],
+                        "singalPrivate": ["singalPrivate"],
+                        "telegramMessenger": ["telegramMessenger"],
+                        "whatappsMessages": ["whatappsMessages"],
+                        "linkedinMessages": ["linkedinMessages"],
+                        "facebookAds": ["facebookAds"],
+                        "googleAds": ["googleAds","googleAds"]
+                    }
+                }
+                </pre>
+            </td>
+            <td><pre>
+                {
+                    "error":true/false,
+                "id":"356f2982-6615-4a7e-98d1-086c292f63fc"
+                }
+            </pre>
+            </td>
+        </tr>
     </tbody>
 </table>
 </body>

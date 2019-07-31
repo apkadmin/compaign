@@ -1,29 +1,30 @@
 package com.movan.modal;
 
+import java.util.Arrays;
+
 public class Channel {
 
-   private String pushNotification  = null;
-   private String email             = null;
-   private String sms               = null;
-   private String facebookMessenger = null;
-   private String zalo              = null;
-   private String twitterMessenger  = null;
-   private String slackMessenger    = null;
-   private String viberMessenger    = null;
-   private String skypeMessenger    = null;
-   private String line              = null;
-   private String discord           = null;
-   private String singalPrivate     = null;
-   private String telegramMessenger = null;
-   private String whatappsMessages  = null;
-   private String linkedinMessages  = null;
-   private String facebookAds       = null;
-   private String googleAds         = null;
-
+   private String[] pushNotification  = null;
+   private String[] email             = null;
+   private String[] sms               = null;
+   private String[] facebookMessenger = null;
+   private String[] zalo              = null;
+   private String[] twitterMessenger  = null;
+   private String[] slackMessenger    = null;
+   private String[] viberMessenger    = null;
+   private String[] skypeMessenger    = null;
+   private String[] line              = null;
+   private String[] discord           = null;
+   private String[] singalPrivate     = null;
+   private String[] telegramMessenger = null;
+   private String[] whatappsMessages  = null;
+   private String[] linkedinMessages  = null;
+   private String[] facebookAds       = null;
+   private String[] googleAds         = null;
     public Channel() {
     }
 
-    public Channel(String pushNotification, String email, String sms, String facebookMessenger, String zalo, String twitterMessenger, String slackMessenger, String viberMessenger, String skypeMessenger, String line, String discord, String singalPrivate, String telegramMessenger, String whatappsMessages, String linkedinMessages, String facebookAds, String googleAds) {
+    public Channel(String[] pushNotification, String[] email, String[] sms, String[] facebookMessenger, String[] zalo, String[] twitterMessenger, String[] slackMessenger, String[] viberMessenger, String[] skypeMessenger, String[] line, String[] discord, String[] singalPrivate, String[] telegramMessenger, String[] whatappsMessages, String[] linkedinMessages, String[] facebookAds, String[] googleAds) {
         this.pushNotification = pushNotification;
         this.email = email;
         this.sms = sms;
@@ -43,139 +44,162 @@ public class Channel {
         this.googleAds = googleAds;
     }
 
-    public String getPushNotification() {
+    public String[] getPushNotification() {
         return pushNotification;
     }
 
-    public void setPushNotification(String pushNotification) {
+    public void setPushNotification(String[] pushNotification) {
         this.pushNotification = pushNotification;
     }
 
-    public String getEmail() {
+    public String[] getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String[] email) {
         this.email = email;
     }
 
-    public String getSms() {
+    public String[] getSms() {
         return sms;
     }
 
-    public void setSms(String sms) {
+    public void setSms(String[] sms) {
         this.sms = sms;
     }
 
-    public String getFacebookMessenger() {
+    public String[] getFacebookMessenger() {
         return facebookMessenger;
     }
 
-    public void setFacebookMessenger(String facebookMessenger) {
+    public void setFacebookMessenger(String[] facebookMessenger) {
         this.facebookMessenger = facebookMessenger;
     }
 
-    public String getZalo() {
+    public String[] getZalo() {
         return zalo;
     }
 
-    public void setZalo(String zalo) {
+    public void setZalo(String[] zalo) {
         this.zalo = zalo;
     }
 
-    public String getTwitterMessenger() {
+    public String[] getTwitterMessenger() {
         return twitterMessenger;
     }
 
-    public void setTwitterMessenger(String twitterMessenger) {
+    public void setTwitterMessenger(String[] twitterMessenger) {
         this.twitterMessenger = twitterMessenger;
     }
 
-    public String getSlackMessenger() {
+    public String[] getSlackMessenger() {
         return slackMessenger;
     }
 
-    public void setSlackMessenger(String slackMessenger) {
+    public void setSlackMessenger(String[] slackMessenger) {
         this.slackMessenger = slackMessenger;
     }
 
-    public String getViberMessenger() {
+    public String[] getViberMessenger() {
         return viberMessenger;
     }
 
-    public void setViberMessenger(String viberMessenger) {
+    public void setViberMessenger(String[] viberMessenger) {
         this.viberMessenger = viberMessenger;
     }
 
-    public String getSkypeMessenger() {
+    public String[] getSkypeMessenger() {
         return skypeMessenger;
     }
 
-    public void setSkypeMessenger(String skypeMessenger) {
+    public void setSkypeMessenger(String[] skypeMessenger) {
         this.skypeMessenger = skypeMessenger;
     }
 
-    public String getLine() {
+    public String[] getLine() {
         return line;
     }
 
-    public void setLine(String line) {
+    public void setLine(String[] line) {
         this.line = line;
     }
 
-    public String getDiscord() {
+    public String[] getDiscord() {
         return discord;
     }
 
-    public void setDiscord(String discord) {
+    public void setDiscord(String[] discord) {
         this.discord = discord;
     }
 
-    public String getSingalPrivate() {
+    public String[] getSingalPrivate() {
         return singalPrivate;
     }
 
-    public void setSingalPrivate(String singalPrivate) {
+    public void setSingalPrivate(String[] singalPrivate) {
         this.singalPrivate = singalPrivate;
     }
 
-    public String getTelegramMessenger() {
+    public String[] getTelegramMessenger() {
         return telegramMessenger;
     }
 
-    public void setTelegramMessenger(String telegramMessenger) {
+    public void setTelegramMessenger(String[] telegramMessenger) {
         this.telegramMessenger = telegramMessenger;
     }
 
-    public String getWhatappsMessages() {
+    public String[] getWhatappsMessages() {
         return whatappsMessages;
     }
 
-    public void setWhatappsMessages(String whatappsMessages) {
+    public void setWhatappsMessages(String[] whatappsMessages) {
         this.whatappsMessages = whatappsMessages;
     }
 
-    public String getLinkedinMessages() {
+    public String[] getLinkedinMessages() {
         return linkedinMessages;
     }
 
-    public void setLinkedinMessages(String linkedinMessages) {
+    public void setLinkedinMessages(String[] linkedinMessages) {
         this.linkedinMessages = linkedinMessages;
     }
 
-    public String getFacebookAds() {
+    public String[] getFacebookAds() {
         return facebookAds;
     }
 
-    public void setFacebookAds(String facebookAds) {
+    public void setFacebookAds(String[] facebookAds) {
         this.facebookAds = facebookAds;
     }
 
-    public String getGoogleAds() {
+    public String[] getGoogleAds() {
         return googleAds;
     }
 
-    public void setGoogleAds(String googleAds) {
+    public void setGoogleAds(String[] googleAds) {
         this.googleAds = googleAds;
+    }
+
+    @Override
+    public String toString() {
+        return "Channel{" +
+                "pushNotification='" + Arrays.toString(pushNotification) + '\'' +
+                ", email='" +  Arrays.toString(email) + '\'' +
+                ", sms='" +  Arrays.toString(sms) + '\'' +
+                ", facebookMessenger='" +  Arrays.toString(facebookMessenger) + '\'' +
+                ", zalo='" +  Arrays.toString(zalo) + '\'' +
+                ", twitterMessenger='" +  Arrays.toString(twitterMessenger) + '\'' +
+                ", slackMessenger='" +  Arrays.toString(slackMessenger) + '\'' +
+                ", viberMessenger='" +  Arrays.toString(viberMessenger) + '\'' +
+                ", skypeMessenger='" +  Arrays.toString(skypeMessenger) + '\'' +
+                ", line='" +  Arrays.toString(line) + '\'' +
+                ", discord='" +  Arrays.toString(discord) + '\'' +
+                ", singalPrivate='" +  Arrays.toString(singalPrivate) + '\'' +
+                ", telegramMessenger='" +  Arrays.toString(telegramMessenger) + '\'' +
+                ", whatappsMessages='" +  Arrays.toString(whatappsMessages) + '\'' +
+                ", linkedinMessages='" +  Arrays.toString(linkedinMessages) + '\'' +
+                ", facebookAds='" +  Arrays.toString(facebookAds) + '\'' +
+                ", googleAds='" +  Arrays.toString(googleAds) + '\'' +
+                '}';
     }
 }
